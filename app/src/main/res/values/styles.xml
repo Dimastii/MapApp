@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //Стиль для активити для маркера на мапе(диалог)
+    <color name="custom_theme_color">#b0b0ff</color>
+    <style name="ThemeAboutMark" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
+        <!--<item name="android:windowBackground">@color/custom_theme_color</item>-->
+        <item name="android:colorBackground">#8803A9F4</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#BFBA68C8</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
