@@ -49,7 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-        final EditText editText = (EditText) findViewById(R.id.text1);
+        /*final EditText editText = (EditText) findViewById(R.id.text1);
         editText.setOnKeyListener(new View.OnKeyListener() {
                                       public boolean onKey(View v, int keyCode, KeyEvent event) {
                                           if (event.getAction() == KeyEvent.ACTION_DOWN &&
@@ -62,8 +62,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                           }
                                           return false;
                                       }
-                                  }
-        );
+                                  }*/
+
     }
 
     /**
