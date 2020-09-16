@@ -2,6 +2,7 @@ package com.example.mapapp;
 
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -31,7 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         MarkAdapter markAdapter = new MarkAdapter(generateMarkList());
         recyclerView.setAdapter(markAdapter);
 
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(MapsActivity.this);
         recyclerView.setLayoutManager(mLayoutManager);
 
 
@@ -39,11 +40,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private List<Token> generateMarkList() {
         LinkedList<Token> TokenList = new LinkedList<>();
-        Token q1 = new Token(10,30,"1","Mark #1");
-        Token q2 = new Token(30,30,"2","Mark #2");
-        Token q3 = new Token(10,10,"3","Mark #3");
-        Token q4 = new Token(30,10,"4","Mark #4");
-        Token q5 = new Token(54.370807, 48.596662,"5","Mark #5");
+        LinkedList<Integer> imageList = new LinkedList<Integer>();
+
+
+        imageList.add(R.drawable.love_fonk);
+        imageList.add(R.drawable.love_fonk);
+        imageList.add(R.drawable.love_fonk);
+
+        Token q1 = new Token(10,30,"1","Mark #1",imageList);
+        Token q2 = new Token(30,30,"2","Mark #2",imageList);
+        Token q3 = new Token(10,10,"3","Mark #3",imageList);
+        Token q4 = new Token(30,10,"4","Mark #4",imageList);
+        Token q5 = new Token(54.370807, 48.596662,"5","Mark #5",imageList);
         TokenList.add(q1);
         TokenList.add(q2);
         TokenList.add(q3);

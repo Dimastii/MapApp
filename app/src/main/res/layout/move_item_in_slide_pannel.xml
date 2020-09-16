@@ -10,20 +10,29 @@
         android:id="@+id/move_item_in_slide_pannel_key"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="1232131231232131231231\n231312313231231"
         android:background="#FFFF00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:text="1232131231232131231231\n231312313231231" />
 
     <TextView
         android:id="@+id/move_item_in_slide_pannel_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="1232131231232131231231\n231312313231231"
         android:background="#FF0000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1232131231232131231231\n231312313231231" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/move_item_in_slide_pannel__RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move_item_in_slide_pannel_key" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
