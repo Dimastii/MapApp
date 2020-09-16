@@ -18,9 +18,10 @@
             android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
+                android:orientation="horizontal"
+                android:id="@+id/activity_maps__items_in_slide_pannel"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
             </androidx.recyclerview.widget.RecyclerView>
 
 
