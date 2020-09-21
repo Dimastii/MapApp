@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -27,6 +28,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+        SlidingUpPanelLayout slide = findViewById(R.id.slidingUp_panel);
+        slide.setAnchorPoint((float)0.5);
+
 
         RecyclerView recyclerView = findViewById(R.id.activity_maps__items_in_slide_pannel);
         MarkAdapter markAdapter = new MarkAdapter(generateMarkList());

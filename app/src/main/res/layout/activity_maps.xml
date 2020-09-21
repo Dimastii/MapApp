@@ -5,17 +5,29 @@
     android:id="@+id/slidingUp_panel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:gravity="bottom"
+
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent">
+    app:layout_constraintEnd_toEndOf="parent"
+    app:umanoPanelHeight="50dp"
+    app:umanoFadeColor="@android:color/transparent"
+    app:umanoParallaxOffset="300dp"
+    app:umanoDragView="@+id/DragView"
+    >
     <include layout="@layout/fragment_maps" android:id="@+id/map_content"/>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center|top"
             android:orientation="vertical">
+
+            <View
+                android:background="@drawable/rectangle_rounded_topl__left_right_"
+                android:id="@+id/DragView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:orientation="horizontal"
